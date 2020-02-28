@@ -1,5 +1,12 @@
 <template>
-	<joint-paper :background="background" :grid-size="gridSize" :draw-grid="drawGrid" @init="setupGraph" />
+  <div class="container">
+    <joint-paper
+      :background="background"
+      :grid-size="gridSize"
+      :draw-grid="drawGrid"
+      @init="setupGraph"
+    />
+  </div>
 </template>
 
 <script>

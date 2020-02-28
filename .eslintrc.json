@@ -1,6 +1,5 @@
 {
-	"env":
-	{
+	"env": {
 		"browser": true,
 		"es6": true
 	},
@@ -8,28 +7,41 @@
 		"eslint:recommended",
 		"plugin:vue/recommended"
 	],
-	"parserOptions":
-	{
+	"parserOptions": {
 		"parser": "babel-eslint",
 		"sourceType": "module"
 	},
 	"plugins": [
 		"vue"
 	],
-	"rules":
-	{
-		"curly": ["error", "multi-line"],
+	"rules": {
+		"curly": [
+			"error",
+			"multi-line"
+		],
 		"eqeqeq": "error",
-		"indent": ["warn", "tab"],
+		"indent": [
+			"warn",
+			"tab"
+		],
 		"newline-per-chained-call": "warn",
 		"no-console": "off",
 		"no-whitespace-before-property": "warn",
-		"quotes": ["warn", "single"],
-		"semi": ["warn", "always"],
+		"quotes": [
+			"warn",
+			"single"
+		],
+		// "semi": [
+		// 	"warn",
+		// 	"always"
+		// ],
 		"vue/attributes-order": "warn",
-		"vue/html-indent": ["warn", "tab"],
+		// "vue/html-indent": ["warn", "tab"],
 		"vue/html-self-closing": "off",
 		"vue/max-attributes-per-line": "off",
-		"vue/component-name-in-template-casing": ["warn", "kebab-case"]
+		"vue/component-name-in-template-casing": [
+			"warn",
+			"kebab-case"
+		]
 	}
 }

@@ -1,5 +1,5 @@
 <template>
-	<div ref="joint"></div>
+  <div ref="joint"></div>
 </template>
 
 <script>
