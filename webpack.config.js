@@ -35,7 +35,7 @@ let config = {
 		}, {
 			test: /\.css$/,
 			use: [
-				'css-loader'
+				'css-loader', 'postcss-loader'
 			]
 		}, {
 			test: /\.(png|jpg|gif|svg)$/,

@@ -1,22 +1,29 @@
 <template>
-  <div class="container">
-    <joint-paper
+  <div class="flex container p-2">
+    <left-panel class="w-1/4"></left-panel>
+    <joint-paper 
+      class="w-2/4"
       :background="background"
       :grid-size="gridSize"
       :draw-grid="drawGrid"
       @init="setupGraph"
     />
+    <module-properties class="w-1/4"></module-properties>
   </div>
 </template>
 
 <script>
 import JointPaper from '@/components/JointPaper';
+import LeftPanel from '@/components/LeftPanel';
+import ModuleProperties from '@/components/ModuleProperties';
 
 export default {
 	name: 'App',
 
 	components: {
-		JointPaper
+		JointPaper,
+		LeftPanel,
+		ModuleProperties
 	},
 
 	data() {
@@ -61,5 +68,5 @@ export default {
 };
 </script>
 
-<style>
+<style src="./styles.css">
 </style>
